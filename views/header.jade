@@ -3,6 +3,7 @@ header
 	div.header
 		a(href="/").logo
 			h1= title
+		div.menu-sm(onclick='showSmallMenu()')
 		div.menu
 			ul
 				li
@@ -19,3 +20,4 @@ header
 				li.md-menu='•	'
 				li
 					a(href='/contacts')= 'Контакты'
+			div.close-menu(onclick='hideSmallMenu()')
